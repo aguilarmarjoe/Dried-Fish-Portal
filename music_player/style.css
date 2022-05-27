@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+
+/* CSS TO STYLE MAIN ELEMENTS */
+
+body {
+    color: rgb(160, 160, 160);
+    background-color: rgb(80, 80, 80);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+div {
+    width: 359px;
+}
+
+
+/* CSS FOR MUSIC PLAYER CONTAINER */
+
+.player {
+    background-color: rgb(50, 50, 50);
+    height: auto;
+    margin: 160px auto 0;
+}
+
+
+/* CSS FOR BUTTON THAT SHOWS THE PLAYLIST */
+
+.player-list-button {
+    background: url('/images/jquery/icon-down.png');
+    color: rgb(120, 120, 120);
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin: 5px 3px;
+    width: 20px;
+}
+
+.up {
+    background: url('/images/jquery/icon-up.png');
+}
+
+
+/* CSS FOR SONG INFORMATION IN PLAYER*/
+
+.player-info {
+    height: 120px;
+}
+
+.player-info-image {
+    background-color: rgb(20, 20, 20);
+    float: left;
+    height: 120px;
+    overflow: hidden;
+    width: 120px;
+}
+
+.player-info-image img {
+    width: 100%;
+}
+
+.player-info-song {
+    color: white;
+    float: right;
+    font-size: 20px;
+    margin: 0 20px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 199px;
+}
+
+.player-info-artist {
+    color: rgb(160, 160, 160);
+    float: right;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin: 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    width: 199px;
+    white-space: nowrap;
+}
+
+.player-info-range {
+    float: right;
+    margin: 30px 20px 0;
+    width: 199px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgb(30, 30, 30);
+    border: none;
+    height: 6px;
+    outline: none;
+    margin: 0;
+    width: 199px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgb(100, 100, 100);
+    height: 6px;
+    outline: none;
+    width: 25px;
+}
+
+
+/* CSS FOR THE MUSIC PLAYER BUTTONS */
+
+.player-buttons {
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.player-buttons-previous {
+    background-image: url('/images/jquery/button-prev.png');
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    opacity: 0.5;
+    width: 60px;
+}
+
+.player-buttons-play {
+    background-image: url('/images/jquery/button-play.png');
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    opacity: 0.5;
+    width: 60px;
+}
+
+.pause {
+    background: url('/images/jquery/button-pause.png');
+}
+
+.player-buttons-next {
+    background-image: url('/images/jquery/button-next.png');
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    opacity: 0.5;
+    width: 60px;
+}
+
+.player-buttons-previous:hover,
+.player-buttons-play:hover,
+.player-buttons-next:hover {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+
+/* css FOR THE PLAYER LIST AND LIST ITEMS */
+
+.player-list {
+    display: none;
+    height: 321px;
+    overflow-x: hidden;
+}
+
+.player-list-item {
+    background-color: rgb(40, 40, 40);
+    cursor: pointer;
+    height: 50px;
+}
+
+.item-image {
+    background-color: rgb(20, 20, 20);
+    float: left;
+    height: 50px;
+    margin: 0 10px 0 0;
+    width: 50px;
+}
+
+.item-image img {
+    width: 100%;
+}
+
+.item-song {
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+    font-weight: 600;
+    height: 20px;
+    margin: 0;
+    padding: 5px 0 3px;
+    width: 320px;
+}
+
+.item-artist {
+    font-size: 10px;
+    height: 20px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+
+/* CLASS USED TO HIGHLIGHT A SELECTED LIST ITEM */
+
+.selected {
+    background-color: rgb(60, 60, 60);
+}
+
+
+/* ID FOR THE YOUTUBE VIDEO PLAYER DIV */
+
+#player {
+    background-color: black;
+    height: 120px;
+    width: 120px;
+}
